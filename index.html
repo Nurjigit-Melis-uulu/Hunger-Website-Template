@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hunger. Restaurant</title>
+</head>
+
+<body>
+
+  <main>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">home</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">about</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">team</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">booking</a>
+          </li>
+        </ul>
+
+        <div class="header__logo">
+          <img src="./assets/images/logo/logo.svg" alt="logo">
+        </div>
+
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="#" class="header__link">menu</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">galerie</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">events</a>
+          </li>
+          <li class="header__item">
+            <a href="#" class="header__link">contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__body">
+        <div class="header__content-wrapper">
+          <div class="header__schedule">
+            Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+          </div>
+          <div class="header__content">
+            <p>Restaurant</p>
+            <h1 class="header__title title">Hungry People</h1>
+            <div class="divider"></div>
+            <button class="btn-colored">book table</button>
+            <button class="btn-outline">explore</button>
+          </div>
+          <div class="header__social-links">
+            <a href="#link" class="header__social-link"></a>
+            <a href="#link" class="header__social-link"></a>
+            <a href="#link" class="header__social-link"></a>
+          </div>
+        </div>
+        <button class="down-btn">
+          <img src="./assets/images/header/down-btn.png" alt="scroll-down">
+        </button>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="section-body">
+        <article class="article">
+          <h2 class="title">About us</h2>
+          <div class="divider"></div>
+          <p class="accent-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+            magna.
+          </p>
+          <p>
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+            dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+          </p>
+        </article>
+        <div class="picture">
+          <img src="./assets/images/about/about-img.png" alt="about-img">
+          <div class="picture__decor picture__decor-right"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="section__header">
+        <h2>our team</h2>
+      </div>
+      <div class="section-body">
+        <div class="picture">
+          <img src="./assets/images/about/about-img.png" alt="about-img">
+          <div class="picture__decor picture__decor-left"></div>
+        </div>
+        <article class="article">
+          <h2 class="title">About us</h2>
+          <div class="divider"></div>
+          <p class="accent-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+            magna.
+          </p>
+          <p>
+            Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed
+            dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris
+            tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="section-body">
+        <article class="article">
+          <h2 class="title">About us</h2>
+          <div class="divider"></div>
+          <form action="post" class="booking__form">
+            <input type="text" name="booking__name" id="booking__name" placeholder="Name">
+            <input type="tel" name="booking__telephone" id="booking__telephone">
+            <input type="date" name="booking__date" id="booking__date">
+            <input type="email" name="booking__email" id="booking__email">
+            <label for="people">
+              <input type="text" name="people" id="people">
+              <select name="people" id="people-select">
+                <option value="single">single</option>
+                <option value="duet">duet</option>
+              </select>
+            </label>
+            <label for="time">
+              <input type="time" name="time" id="time">
+              <select name="people" id="time-select">
+                <option value="morning">morning</option>
+                <option value="lunch">lunch</option>
+              </select>
+            </label>
+            <button type="submit" class="btn-colored">book now</button>
+          </form>
+        </article>
+        <div class="picture">
+          <img src="./assets/images/about/about-img.png" alt="about-img">
+          <div class="picture__decor picture__decor-right"></div>
+        </div>
+      </div>
+      <div class="section__schedule">
+        <span>
+          Mon - Fri: <b>8PM - 10PM</b>, Sat - Sun: <b>8PM - 3AM</b>, Phone: <b>+40 729 131 637/+40 726 458 782</b>
+        </span>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <article class="article">
+        <h2 class="title">About us</h2>
+        <div class="divider"></div>
+        <p class="accent-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor
+          magna.
+        </p>
+      </article>
+      <ul class="menu__filters">
+        <li class="menu__filter">soupe</li>
+        <li class="menu__filter">pizza</li>
+        <li class="menu__filter">pasta</li>
+        <li class="menu__filter">desert</li>
+        <li class="menu__filter">wine</li>
+        <li class="menu__filter">beer</li>
+        <li class="menu__filter">drinks</li>
+      </ul>
+      <ul class="menu__list">
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+        <li class="menu__item">
+          <div class="menu__header">
+            <h4 class="menu__title">PIZZA QUATRO STAGIONI</h4>
+            <p class="menu__desc">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <div class="menu__price">55,68 USD</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="events" id="events">
+      <div class="section__header">
+        <h2>private events</h2>
+      </div>
+      <div class="section-body">
+        <div class="picture">
+          <img src="./assets/images/about/about-img.png" alt="about-img">
+          <div class="picture__decor picture__decor-left"></div>
+        </div>
+        <div class="picture">
+          <img src="./assets/images/about/about-img.png" alt="about-img">
+          <div class="picture__decor picture__decor-right"></div>
+        </div>
+      </div>
+      <div class="section__schedule">
+        <span>
+          For private events please call: <b>+40 729 131 637/+40 726 458 782</b> or use the contact form.
+        </span>
+      </div>
+    </section>
+
+    <section class="galerie" id="galerie"></section>
+
+    <section class="contact" id="contact">
+      <article class="article">
+        <h2 class="title">About us</h2>
+        <div class="divider"></div>
+        <p class="accent-paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.
+        </p>
+      </article>
+      <form action="post" class="contact__form">
+        <input type="text" class="">
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
