@@ -1,0 +1,228 @@
+/* #about {}
+
+#team {}
+
+#booking {}
+
+#booking__name {}
+
+#booking__tel {}
+
+#booking__date {}
+
+#booking__email {}
+
+#booking__people {}
+
+#booking__people-select {}
+
+#booking__time {}
+
+#booking__time-select {}
+
+#menu {}
+
+#events {}
+
+#galerie {}
+
+#contact {}
+
+#contact__name {}
+
+#contact__email {}
+
+#contact__tel {}
+
+#contact__message {}
+
+#map {} */
+
+
+@font-face {
+  font-family: 'Banny Bold Round';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Banny Bold Round'), url('../assets/fonts/Banny-BoldRound.woff') format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: "Open sans";
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.title {
+  font-family: 'Banny Bold Round';
+}
+
+.header {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-weight: bold;
+  background-image: url(../assets/images/header/header-bg.png);
+  /* background-size: cover; */
+  background-position: center;
+  text-transform: uppercase;
+}
+
+.header__wrapper {
+  width: 100%;
+  max-width: 1280px;
+  height: 100%;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__list {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px #ffffff33 solid;
+}
+
+.header__item {
+  width: 100%;
+  max-width: 133px;
+}
+
+.header__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+  color: white;
+}
+
+.header__link:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.header__logo {
+  margin: 25px 35px 0;
+}
+
+.header__body {
+  width: 100%;
+  height: 446px;
+  display: flex;
+  align-items: center;
+}
+
+.header__content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__schedule {
+  transform: rotate(-90deg);
+  font-size: 12px;
+}
+
+.header__content p {
+  font-size: 12px;
+  letter-spacing: 0.5em;
+}
+
+.header__title {
+  font-size: 96px;
+}
+
+.down-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+}
+
+.article {
+  text-align: center;
+}
+
+.divider {
+  width: 60px;
+  height: 5px;
+  background: #E8C300;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+/* 
+
+.btn-colored {}
+
+.btn-outline {}
+
+.header__social-links {}
+
+.header__social-link {}
+
+.about {}
+
+.section-body {}
+
+.title {}
+
+.accent-paragraph {}
+
+.picture {}
+
+.picture__decor.picture__decor-right {}
+
+.team {}
+
+.section__header {}
+
+.picture__decor.picture__decor-left {}
+
+.booking {}
+
+.booking__form {}
+
+.section__schedule {}
+
+.menu {}
+
+.menu__filters {}
+
+.menu__filter {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__header {}
+
+.menu__title {}
+
+.menu__desc {}
+
+.menu__price {}
+
+.events {}
+
+.galerie {}
+
+.owl-carousel {}
+
+.contact {}
+
+.contact__form {}
+
+.contact__name {}
+
+.map {} */
