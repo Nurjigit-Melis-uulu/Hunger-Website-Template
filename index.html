@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hunger. Restaurant</title>
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./assets/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/owl-carousel/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -347,7 +351,17 @@
       </div>
     </section>
 
-    <section class="galerie" id="galerie"></section>
+    <section class="galerie" id="galerie">
+      <div class="owl-carousel">
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+        <div> Your Content </div>
+      </div>
+    </section>
 
     <section class="contact" id="contact">
       <article class="article">
@@ -382,6 +396,14 @@
     </footer>
   </main>
 
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./assets/owl-carousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
 </body>
 
 </html>
