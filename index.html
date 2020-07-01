@@ -125,19 +125,19 @@
           <div class="divider"></div>
           <form action="post" class="booking__form">
             <input type="text" name="booking__name" id="booking__name" placeholder="Name">
-            <input type="tel" name="booking__telephone" id="booking__telephone">
+            <input type="tel" name="booking__tel" id="booking__tel">
             <input type="date" name="booking__date" id="booking__date">
             <input type="email" name="booking__email" id="booking__email">
-            <label for="people">
-              <input type="text" name="people" id="people">
-              <select name="people" id="people-select">
+            <label for="booking__people">
+              <input type="text" name="booking__people" id="booking__people">
+              <select name="booking__people" id="booking__people-select">
                 <option value="single">single</option>
                 <option value="duet">duet</option>
               </select>
             </label>
             <label for="time">
-              <input type="time" name="time" id="time">
-              <select name="people" id="time-select">
+              <input type="time" name="booking__time" id="booking__time">
+              <select name="booking__time-select" id="booking__time-select">
                 <option value="morning">morning</option>
                 <option value="lunch">lunch</option>
               </select>
@@ -358,9 +358,28 @@
         </p>
       </article>
       <form action="post" class="contact__form">
-        <input type="text" class="">
+        <input type="text" class="contact__name" id="contact__name">
+        <input type="email" name="contact__email" id="contact__email">
+        <input type="tel" name="contact__tel" id="contact__tel">
+        <textarea name="contact__message" id="contact__message" cols="30" rows="10"></textarea>
+        <div>
+          <div>
+            <span>5th London Boulevard, U.K.</span>
+            <span>+40 729 131 637/+40 726 458 782</span>
+            <span>office@mindblister.com</span>
+          </div>
+          <button type="submit" class="btn-colored"></button>
+        </div>
       </form>
     </section>
+
+    <section class="map" id="map">
+
+    </section>
+
+    <footer>
+      © Copyright <b>Mindblister</b> 2019
+    </footer>
   </main>
 
 </body>
