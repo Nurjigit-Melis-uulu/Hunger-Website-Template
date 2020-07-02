@@ -1,44 +1,3 @@
-/* #about {}
-
-#team {}
-
-#booking {}
-
-#booking__name {}
-
-#booking__tel {}
-
-#booking__date {}
-
-#booking__email {}
-
-#booking__people {}
-
-#booking__people-select {}
-
-#booking__time {}
-
-#booking__time-select {}
-
-#menu {}
-
-#events {}
-
-#galerie {}
-
-#contact {}
-
-#contact__name {}
-
-#contact__email {}
-
-#contact__tel {}
-
-#contact__message {}
-
-#map {} */
-
-
 @font-face {
   font-family: 'Banny Bold Round';
   font-style: normal;
@@ -109,7 +68,7 @@ button[class^="btn-"] {
   justify-content: center;
   font-weight: bold;
   background-image: url(../assets/images/header/header-bg.png);
-  /* background-size: cover; */
+  background-size: cover;
   background-position: center;
   text-transform: uppercase;
   position: relative;
@@ -294,6 +253,7 @@ section {
   width: 100%;
   max-width: 1280px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -470,6 +430,7 @@ form select {
 .menu__filters {
   display: flex;
   margin: 40px 0 50px;
+  flex-wrap: wrap;
 }
 
 .menu__filters li {
@@ -495,14 +456,14 @@ form select {
 .menu__list {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
-  grid-gap: 30px 80px;
-  margin-bottom: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(365px, 1fr));
+  grid-gap: 10px;
 }
 
 .menu__item {
-  width: 100%;
   display: flex;
+  padding: 0 10px 35px;
+  justify-content: center;
 }
 
 .menu__title {
@@ -566,6 +527,7 @@ form select {
 
 .galerie {
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .contact__form {
@@ -626,9 +588,8 @@ footer {
   font-size: 12px;
 }
 
-/* 
-
-.contact__form {}
-
-.contact__name {}
-*/
+@media (max-width: 1440px) {
+  section {
+    padding: 50px 40px;
+  }
+}
