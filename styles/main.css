@@ -418,7 +418,38 @@ form select {
 
 .specialties {
   background-image: url(../assets/images/specialties/spec-bg.png);
-  display: block;
+  padding-bottom: 33px;
+}
+
+.specialties .spec-slider {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.specialties .slick-arrow {
+  display: none !important;
+}
+
+.specialties .slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 0 0;
+}
+
+.specialties .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-radius: 100%;
+  color: transparent;
+  padding: 0;
+  margin: 0 12.5px;
+}
+
+.specialties .slick-dots li.slick-active button {
+  background: white !important;
 }
 
 /* 
