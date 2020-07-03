@@ -28,7 +28,10 @@ button {
   cursor: pointer;
 }
 
-button[class^="btn-"] {
+.header__btn-wrapper a[class^="btn-"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 60px;
   color: white;
   text-transform: uppercase;
@@ -37,6 +40,7 @@ button[class^="btn-"] {
   border-width: 1px;
   border-style: solid;
   border-radius: 5px;
+  text-decoration: none;
 }
 
 .btn-colored {
@@ -171,7 +175,7 @@ button[class^="btn-"] {
   margin: 0;
 }
 
-.header__btn-wrapper button {
+.header__btn-wrapper a {
   width: 200px;
   margin: 15px 19px;
 }
@@ -183,6 +187,9 @@ button[class^="btn-"] {
 }
 
 .down-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   left: calc(50% - 30px);
   bottom: 83px;
@@ -880,12 +887,29 @@ footer {
     height: 400px;
   }
 
+  .header {
+    height: 600px;
+  }
+
+  .down-btn {
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: 30px;
+  }
+
   .title {
     font-size: 26px;
   }
 
   .header__title {
     font-size: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__btn-wrapper a {
+    width: 160px;
+    margin: 15px 19px;
   }
 }
 
@@ -905,5 +929,9 @@ footer {
   .header__btn-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .header__btn-wrapper a {
+    margin: 15px 0 0;
   }
 }
