@@ -544,12 +544,29 @@ form select#booking__people-select {
 
 .galerie {
   padding: 0;
+}
+
+.galerie__list {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 0;
 }
 
-.galerie img {
+.galerie__popup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.galerie__list img {
   width: 100%;
 }
 

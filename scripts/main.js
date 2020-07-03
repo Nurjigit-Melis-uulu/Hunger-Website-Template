@@ -3,7 +3,20 @@ let backdrop = document.querySelector(".backdrop");
 let hamburger = document.querySelector(".hamburger");
 let drawer = document.querySelector(".drawer");
 let anchors = document.querySelectorAll(".anchor");
+let popup = document.querySelector(".galerie__popup");
+let galerieList = document.querySelectorAll(".galerie__list img");
 let drawerStatus = false;
+
+popup.addEventListener("mousedown", () => {
+  popup.style.display = "none";
+});
+
+for (let image of galerieList) {
+  image.addEventListener("mousedown", () => {
+    popup.style.display = "flex";
+    document.querySelector(".galerie__popup img").src = image.src;
+  });
+}
 
 hamburger.addEventListener("mousedown", () => {
   drawerStatus = !drawerStatus;
@@ -52,11 +65,4 @@ $(document).ready(function () {
   $(".spec-slider").slick({
     dots: true,
   });
-});
-
-$(".header").parallax({ imageSrc: "../assets/images/header/header-bg.png" });
-$("#team").parallax({ imageSrc: "../assets/images/team/team-bg.png" });
-$("#events").parallax({ imageSrc: "../assets/images/specialties/spec-bg.png" });
-$("#specialties").parallax({
-  imageSrc: "../assets/images/specialties/spec-bg.png",
 });
