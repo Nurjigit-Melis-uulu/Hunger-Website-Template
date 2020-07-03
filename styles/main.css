@@ -512,7 +512,7 @@ form select {
 
 .events .picture .picture__title {
   width: 80px;
-  height: 475px;
+  height: 100%;
   background: #000000;
   position: absolute;
   top: 0;
@@ -853,6 +853,10 @@ footer {
 }
 
 @media (max-width: 650px) {
+  #events .picture .picture__title .title {
+    font-size: 18px !important;
+  }
+
   .picture {
     max-width: 280px;
   }
