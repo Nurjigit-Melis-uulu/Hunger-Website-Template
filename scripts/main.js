@@ -63,3 +63,8 @@ $(document).ready(function () {
 });
 
 $(".header").parallax({ imageSrc: "../assets/images/header/header-bg.png" });
+$("#team").parallax({ imageSrc: "../assets/images/team/team-bg.png" });
+$("#events").parallax({ imageSrc: "../assets/images/specialties/spec-bg.png" });
+$("#specialties").parallax({
+  imageSrc: "../assets/images/specialties/spec-bg.png",
+});
