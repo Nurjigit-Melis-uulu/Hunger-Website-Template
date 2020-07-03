@@ -370,12 +370,26 @@ form label {
   position: relative;
 }
 
-form select {
+form select#booking__people-select {
   width: 60px;
   height: 60px;
   position: absolute;
   right: 0;
   top: 0;
+  border: 0;
+  opacity: 0;
+}
+
+#select-icon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0;
+  background-image: url(../assets/images/booking/arrow-down.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .booking__form .booking__form-grid {
