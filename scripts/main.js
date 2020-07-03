@@ -61,3 +61,5 @@ $(document).ready(function () {
     dots: true,
   });
 });
+
+$(".header").parallax({ imageSrc: "../assets/images/header/header-bg.png" });

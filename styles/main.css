@@ -72,11 +72,9 @@ button[class^="btn-"] {
   color: white;
   justify-content: center;
   font-weight: bold;
-  background-image: url(../assets/images/header/header-bg.png);
-  background-size: cover;
-  background-position: center;
   text-transform: uppercase;
   position: relative;
+  background: transparent;
 }
 
 .header__wrapper {
@@ -344,14 +342,11 @@ section {
   color: #33333380;
 }
 
-.team {
-  background-image: url(../assets/images/team/team-bg.png);
-}
-
 .team,
 .specialties,
 .events {
   color: white;
+  background: transparent;
 }
 
 form input {
@@ -394,7 +389,6 @@ form select {
 }
 
 .specialties {
-  background-image: url(../assets/images/specialties/spec-bg.png);
   padding-bottom: 33px;
 }
 
@@ -500,10 +494,6 @@ form select {
   font-weight: bold;
   font-family: 'Banny Bold Round';
   margin-left: 10px;
-}
-
-.events {
-  background-image: url(../assets/images/specialties/spec-bg.png);
 }
 
 .events .section__schedule {
