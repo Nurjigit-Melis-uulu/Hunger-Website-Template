@@ -35,14 +35,6 @@ for (let anchor of anchors) {
         block: "start",
       });
     }
-
-    for (let link of links) {
-      if (link.getAttribute("href") === blockID) {
-        link.className = "active";
-      } else {
-        link.className = "";
-      }
-    }
   });
 }
 
