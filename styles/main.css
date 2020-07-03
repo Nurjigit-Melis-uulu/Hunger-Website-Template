@@ -28,7 +28,8 @@ button {
   cursor: pointer;
 }
 
-.header__btn-wrapper a[class^="btn-"] {
+.header__btn-wrapper a[class^="btn-"],
+button[class^="btn-"] {
   display: flex;
   justify-content: center;
   align-items: center;
