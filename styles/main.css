@@ -642,6 +642,7 @@ footer {
 }
 
 .drawer__logo {
+  height: 60px;
   display: flex;
   padding: 10px;
   box-sizing: border-box;

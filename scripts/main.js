@@ -2,7 +2,7 @@ let mobileNav = document.querySelector(".header__mobile-nav");
 let backdrop = document.querySelector(".backdrop");
 let hamburger = document.querySelector(".hamburger");
 let drawer = document.querySelector(".drawer");
-let anchors = document.querySelectorAll("nav a");
+let anchors = document.querySelectorAll(".anchor");
 let drawerStatus = false;
 
 hamburger.addEventListener("mousedown", () => {
