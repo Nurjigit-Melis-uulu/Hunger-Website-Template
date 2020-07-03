@@ -5,18 +5,18 @@ let drawer = document.querySelector(".drawer");
 let anchors = document.querySelectorAll("nav a");
 let drawerStatus = false;
 
-hamburger.addEventListener("click", () => {
+hamburger.addEventListener("mousedown", () => {
   drawerStatus = !drawerStatus;
   drawerToggle();
 });
 
-backdrop.addEventListener("click", () => {
+backdrop.addEventListener("mousedown", () => {
   drawerStatus = false;
   drawerToggle();
 });
 
 for (let anchor of anchors) {
-  anchor.addEventListener("click", function (e) {
+  anchor.addEventListener("mousedown", function (e) {
     drawerStatus = false;
     drawerToggle();
 
