@@ -6,6 +6,52 @@ let anchors = document.querySelectorAll(".anchor");
 let popup = document.querySelector(".galerie__popup");
 let galerieList = document.querySelectorAll(".galerie__list img");
 let drawerStatus = false;
+let sections = document.querySelectorAll("section");
+
+$(document).ready(function () {
+  $(window).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function (
+    event
+  ) {
+    delta = parseInt(
+      event.originalEvent.wheelDelta || -event.originalEvent.detail
+    );
+    if (delta >= 0) {
+      console.log("up");
+      parallax("up");
+    } else {
+      console.log("down");
+      parallax("down");
+    }
+  });
+});
+
+function parallax(direction) {
+  sections.forEach((section) => {
+    let sectionPos = section.getBoundingClientRect();
+    let thisParallaxObj = document.querySelector(
+      `#${section.id} .parallax-obj`
+    );
+    let docElem = document.documentElement;
+
+    if (
+      sectionPos.y < docElem.clientHeight &&
+      sectionPos.y > docElem.clientTop &&
+      thisParallaxObj
+    ) {
+      let parallaxIndex = thisParallaxObj.getAttribute("parallaxIndex");
+
+      if (direction === "down") {
+        parallaxIndex = ++parallaxIndex + 10;
+        thisParallaxObj.style.transform = `translateY(${parallaxIndex}px)`;
+      } else {
+        parallaxIndex -= 15;
+        thisParallaxObj.style.transform = `translateY(${parallaxIndex}px)`;
+      }
+
+      thisParallaxObj.setAttribute("parallaxIndex", parallaxIndex);
+    }
+  });
+}
 
 popup.addEventListener("mousedown", () => {
   popup.style.display = "none";

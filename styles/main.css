@@ -248,7 +248,6 @@ button[class^="btn-"] {
 
 section {
   width: 100%;
-  overflow: hidden;
   padding: 100px 80px;
   box-sizing: border-box;
   position: relative;
@@ -756,6 +755,19 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.parallax-obj {
+  position: absolute;
+  left: 60px;
+  top: 40px;
+  width: 200px;
+  height: 200px;
+  transition: transform .4s ease-out;
+}
+
+.parallax-obj img {
+  width: 100%;
 }
 
 @media (max-width: 1440px) {
