@@ -41,10 +41,10 @@ function parallax(direction) {
       let parallaxIndex = thisParallaxObj.getAttribute("parallaxIndex");
 
       if (direction === "down") {
-        parallaxIndex = ++parallaxIndex + 10;
+        parallaxIndex -= 20;
         thisParallaxObj.style.transform = `translateY(${parallaxIndex}px)`;
       } else {
-        parallaxIndex -= 15;
+        parallaxIndex = ++parallaxIndex + 20;
         thisParallaxObj.style.transform = `translateY(${parallaxIndex}px)`;
       }
 
