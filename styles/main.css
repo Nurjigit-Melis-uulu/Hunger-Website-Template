@@ -757,17 +757,24 @@ footer {
   justify-content: center;
 }
 
-.parallax-obj {
+section .parallax-obj {
   position: absolute;
   left: 60px;
-  top: 40px;
+  top: 80px;
   width: 200px;
   height: 200px;
-  transition: transform .4s ease-out;
+  transition: transform .4s ease-in-out;
 }
 
 .parallax-obj img {
   width: 100%;
+}
+
+#team .parallax-obj,
+#specialties .parallax-obj,
+#events .parallax-obj {
+  right: 60px;
+  left: auto;
 }
 
 @media (max-width: 1440px) {

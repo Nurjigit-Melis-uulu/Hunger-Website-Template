@@ -32,6 +32,7 @@ function parallax(direction) {
       `#${section.id} .parallax-obj`
     );
     let docElem = document.documentElement;
+    let parallaxSpeed = 5;
 
     if (
       sectionPos.y < docElem.clientHeight &&
@@ -41,10 +42,10 @@ function parallax(direction) {
       let parallaxIndex = thisParallaxObj.getAttribute("parallaxIndex");
 
       if (direction === "down") {
-        parallaxIndex -= 20;
+        parallaxIndex -= parallaxSpeed;
         thisParallaxObj.style.transform = `translateY(${parallaxIndex}px)`;
       } else {
-        parallaxIndex = ++parallaxIndex + 20;
+        parallaxIndex = ++parallaxIndex + parallaxSpeed;
         thisParallaxObj.style.transform = `translateY(${parallaxIndex}px)`;
       }
 
