@@ -777,6 +777,12 @@ section .parallax-obj {
   left: auto;
 }
 
+#team .parallax-obj img,
+#specialties .parallax-obj img,
+#events .parallax-obj img {
+  transform: rotateY(180deg);
+}
+
 @media (max-width: 1440px) {
   section {
     padding: 100px 40px;
