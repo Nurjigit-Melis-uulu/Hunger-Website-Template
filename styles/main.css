@@ -783,6 +783,18 @@ section .parallax-obj {
   transform: rotateY(180deg);
 }
 
+input.invalid {
+  border: 1px solid maroon;
+}
+
+input.valid {
+  border: 1px solid rgb(21, 126, 39);
+}
+
+input.valid:invalid {
+  border: 1px solid maroon;
+}
+
 @media (max-width: 1440px) {
   section {
     padding: 100px 40px;

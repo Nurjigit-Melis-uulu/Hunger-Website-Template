@@ -7,6 +7,80 @@ let popup = document.querySelector(".galerie__popup");
 let galerieList = document.querySelectorAll(".galerie__list img");
 let drawerStatus = false;
 let sections = document.querySelectorAll("section");
+let bookingForm = document.querySelector(".booking__form");
+let bookingInputs = document.querySelectorAll(".booking__form input");
+let bookingSubmitBtn = document.querySelector(".booking__form button");
+let bookingFormData = {
+  name: null,
+  email: null,
+  phone: null,
+  people: null,
+  date: null,
+  time: null,
+};
+
+bookingInputs.forEach((input) => {
+  input.addEventListener("blur", () => {});
+});
+
+bookingSubmitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  formInputsCheking(bookingInputs);
+
+  bookingInputs.forEach((input) => {
+    input.id === "booking__name" ? (bookingFormData.name = input.value) : null;
+    input.id === "booking__email"
+      ? (bookingFormData.email = input.value)
+      : null;
+    input.id === "booking__tel" ? (bookingFormData.phone = input.value) : null;
+    input.id === "booking__date" ? (bookingFormData.date = input.value) : null;
+    input.id === "booking__time" ? (bookingFormData.time = input.value) : null;
+    input.id === "booking__people"
+      ? (bookingFormData.people = input.value)
+      : null;
+  });
+
+  console.log(bookingFormData);
+  writeNewPost(bookingFormData, "/booking/");
+});
+
+function formInputsCheking(inputArr) {
+  inputArr.forEach((input) => {
+    if (input.value) {
+      if (input.type === "email") {
+        if (input.value.split("@").length > 1) {
+          input.classList.remove("invalid");
+          input.classList.add("valid");
+        } else {
+          input.classList.remove("valid");
+          input.classList.add("invalid");
+        }
+      }
+
+      if (input.type === "date") {
+        let dateNow = new Date();
+        let inputDate = new Date(input.value);
+
+        if (
+          inputDate > dateNow ||
+          (inputDate.getDay() === dateNow.getDay() &&
+            inputDate.getMonth() === dateNow.getMonth() &&
+            inputDate.getFullYear() === dateNow.getFullYear())
+        ) {
+          input.classList.remove("invalid");
+          input.classList.add("valid");
+        } else {
+          input.classList.remove("valid");
+          input.classList.add("invalid");
+        }
+      }
+    } else {
+      input.classList.remove("valid");
+      input.classList.add("invalid");
+    }
+  });
+}
 
 $(document).ready(function () {
   $(window).bind("mousewheel DOMMouseScroll MozMousePixelScroll", function (
@@ -16,10 +90,8 @@ $(document).ready(function () {
       event.originalEvent.wheelDelta || -event.originalEvent.detail
     );
     if (delta >= 0) {
-      console.log("up");
       parallax("up");
     } else {
-      console.log("down");
       parallax("down");
     }
   });
@@ -113,3 +185,25 @@ $(document).ready(function () {
     dots: true,
   });
 });
+
+// firebase init
+var config = {
+  apiKey: "AIzaSyALtbvHxiYovWFnIMS63xJnc1yzUqS9CDg",
+  authDomain: "hunger-01.firebaseapp.com",
+  databaseURL: "https://hunger-01.firebaseio.com",
+  storageBucket: "hunger-01.appspot.com",
+};
+
+firebase.initializeApp(config);
+
+var database = firebase.database();
+
+// posting data function
+function writeNewPost(postData, address) {
+  var newPostKey = firebase.database().ref().child("posts").push().key;
+
+  var updates = {};
+  updates[address + newPostKey] = postData;
+
+  return firebase.database().ref().update(updates);
+}

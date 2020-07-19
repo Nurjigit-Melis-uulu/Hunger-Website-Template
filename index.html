@@ -212,15 +212,15 @@
           <form action="post" class="booking__form">
             <div class="booking__form-grid">
               <input type="text" name="booking__name" id="booking__name" placeholder="Name">
-              <input type="email" name="booking__email" id="booking__email" placeholder="Email">
-              <input type="tel" name="booking__tel" id="booking__tel" placeholder="Phone">
+              <input type="email" name="booking__email" id="booking__email" placeholder="Email" required>
+              <input type="tel" name="booking__tel" id="booking__tel" placeholder="Phone" required>
               <label for="booking__people">
-                <input type="text" name="booking__people" id="booking__people" placeholder="People">
-                <div id="select-icon"></div>
+                <input type="number" name="booking__people" id="booking__people" placeholder="People">
+                <!-- <div id="select-icon"></div>
                 <select name="booking__people" id="booking__people-select">
                   <option value="single">single</option>
                   <option value="duet">duet</option>
-                </select>
+                </select> -->
               </label>
               <input type="date" name="booking__date" id="booking__date" placeholder="Date">
               <input type="time" name="booking__time" id="booking__time" placeholder="Time">
@@ -578,6 +578,18 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="./assets/slick-slider/slick/slick.min.js"></script>
   <script src="./assets/parallax/parallax.min.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
   <script src="./scripts/main.js"></script>
 </body>
 
