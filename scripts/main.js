@@ -7,9 +7,8 @@ let popup = document.querySelector(".galerie__popup");
 let galerieList = document.querySelectorAll(".galerie__list img");
 let drawerStatus = false;
 let sections = document.querySelectorAll("section");
-let bookingForm = document.querySelector(".booking__form");
 let bookingInputs = document.querySelectorAll(".booking__form input");
-let bookingSubmitBtn = document.querySelector(".booking__form button");
+let bookingSubmit = document.querySelector(".booking__form button");
 let bookingFormData = {
   name: null,
   email: null,
@@ -18,12 +17,36 @@ let bookingFormData = {
   date: null,
   time: null,
 };
+let contactInputs = document.querySelectorAll(".contact__form input");
+let contactSubmit = document.querySelector(".contact__form button");
+let contactMess = document.querySelector(".contact__form textarea");
+let contactFormData = {
+  name: null,
+  email: null,
+  phone: null,
+  message: null,
+};
 
-bookingInputs.forEach((input) => {
-  input.addEventListener("blur", () => {});
+contactSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  formInputsCheking(contactInputs);
+
+  contactInputs.forEach((input) => {
+    input.id === "contact__name" ? (contactFormData.name = input.value) : null;
+    input.id === "contact__email"
+      ? (contactFormData.email = input.value)
+      : null;
+    input.id === "contact__tel" ? (contactFormData.phone = input.value) : null;
+  });
+
+  contactFormData.message = contactMess.value;
+
+  console.log(contactFormData);
+  writeNewPost(contactFormData, "/contacts/");
 });
 
-bookingSubmitBtn.addEventListener("click", (e) => {
+bookingSubmit.addEventListener("click", (e) => {
   e.preventDefault();
 
   formInputsCheking(bookingInputs);
