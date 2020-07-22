@@ -228,5 +228,6 @@ function writeNewPost(postData, address) {
   var updates = {};
   updates[address + newPostKey] = postData;
 
+  alert("Your data has been successfully sent, " + postData.name);
   return firebase.database().ref().update(updates);
 }
