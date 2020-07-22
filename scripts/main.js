@@ -211,10 +211,10 @@ $(document).ready(function () {
 
 // firebase init
 var config = {
-  apiKey: "AIzaSyALtbvHxiYovWFnIMS63xJnc1yzUqS9CDg",
-  authDomain: "hunger-01.firebaseapp.com",
-  databaseURL: "https://hunger-01.firebaseio.com",
-  storageBucket: "hunger-01.appspot.com",
+  apiKey: "AIzaSyCxY8ymjdQBPbCyq6mGQ0ZIROfUYxSiNy0",
+  authDomain: "hunger-restaurant.firebaseapp.com",
+  databaseURL: "https://hunger-restaurant.firebaseio.com",
+  storageBucket: "hunger-restaurant.appspot.com",
 };
 
 firebase.initializeApp(config);
